@@ -1,4 +1,6 @@
 # Tools-latency-impact-on-agentic-ai
+---
+## This [blog](https://medium.com/@ahilanp/beyond-latency-tolerance-architecting-latency-averse-systems-for-agentic-ai-089f14a4318a) post provides a detailed explanation of this study ##
 
 This document guides you through setting up a latency test environment. The setup includes a vLLM inference server hosting the Llama 3.1 instruction model, stubbed tools exposed through an MCP server, and an agentic AI application implemented with LangChain.
 
