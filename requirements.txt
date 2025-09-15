@@ -1,0 +1,12 @@
+fastapi
+pydantic
+uvicorn
+requests
+langchain
+langchain-core
+langchain-community
+python-dotenv
+vllm
+langchain-openai
+pandas
+matplotlib
