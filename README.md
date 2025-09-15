@@ -1,6 +1,6 @@
 # Tools-latency-impact-on-agentic-ai
-## How to Run the Agentic Latency Experiment (vLLM Version)
-This guide uses the vLLM serving engine to run the Llama 3.1 model locally. This is a more advanced, high-performance setup.
+
+This document guides you through setting up a latency test environment. The setup includes a vLLM inference server hosting the Llama 3.1 instruction model, stubbed tools exposed through an MCP server, and an agentic AI application implemented with LangChain.
 
 #### CRITICAL NOTE: vLLM is highly optimized for NVIDIA GPUs on Linux. Support for Apple Silicon (MPS) is experimental. You may encounter installation or runtime errors.
 
@@ -49,7 +49,7 @@ uvicorn agent-llama31:app --host 127.0.0.1 --port 8001
 ### Step 7: Run the Automated Load Test (Terminal 4)
 Once all three servers are running, open a fourth terminal window (with the venv activated).
 
-Run the following command. This single script will orchestrate the entire experiment, running for approximately 75 minutes.
+Run the following command. This single script will orchestrate the entire experiment, running for approximately 80 minutes.
 
 ```bash
 python run_load_test.py
